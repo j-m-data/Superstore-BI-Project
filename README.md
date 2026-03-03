@@ -4,7 +4,7 @@
 Analyze Superstore sales data to build key performance indicators (KPIs) and dashboards.
 
 ## Dataset
-- Source: Superstore Sales Dataset (CSV)
+- Source: SuperStore Orders (CSV)
 - Key columns: Order Date, Ship Date, Country, Region, Category, Sub-Category, Sales, Quantity, Profit, Discount, Segment
 
 ## Steps performed
