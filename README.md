@@ -1,4 +1,4 @@
-![Dashboard Preview](dashboard.png)
+![Dashboard Preview](DASHBOARD.png)
 
 # Superstore Sales Analytics Dashboard (Excel)
 
