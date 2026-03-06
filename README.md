@@ -1,33 +1,175 @@
-# Superstore BI Project
+# Superstore Sales Analytics Dashboard (Excel)
 
-## Project Objective
-Analyze Superstore sales data to build key performance indicators (KPIs) and dashboards.
+## Project Overview
 
-## Dataset
-- Source: SuperStore Orders (CSV)
-- Key columns: Order Date, Ship Date, Country, Region, Category, Sub-Category, Sales, Quantity, Profit, Discount, Segment
+This project presents an advanced **Excel analytics dashboard** built from the *Superstore Orders* dataset.
 
-## Steps performed
-1. Data cleaning using Power Query:
-   - Converted text to numbers, fixed date formats, removed duplicates
-2. Data transformation:
-   - Added columns for Month, Quarter, Year
-   - Calculated Profit Margin = Profit / Sales
-3. KPI calculations:
-   - Total sales, total profit, average margin
-   - Sales by region, category, sub-category
-   - Top 10 products by sales
-   - Monthly and quarterly trends
-4. Dashboard creation in Excel / Power BI:
-   - Interactive slicers for Region, Segment, and Category
-   - Visualizations of KPIs and trends
+The goal of this project is to demonstrate how Excel can be used as a **Business Intelligence tool** by combining:
 
-## Skills demonstrated
-- Power Query: data cleaning, transformations
-- Excel: Pivot Tables, formulas, dashboards
-- Power BI: interactive dashboards, data visualization
-- Data analysis: KPI calculation, trend analysis
+* Power Query (data cleaning and transformation)
+* Power Pivot (data modeling and measures)
+* Pivot Tables
+* Interactive dashboard elements
+* VBA automation
 
-## How to use
-- Open `Dashboards.xlsx` to explore the pivot tables and charts
-- Data file is included in the `data` folder
+The dashboard provides insights into **sales performance, profitability, discount impact, customer behavior, and shipping efficiency**.
+
+This project was designed as a **portfolio project for Data Analyst / BI roles**, showcasing advanced Excel data modeling and dashboarding skills.
+
+---
+
+# Dataset
+
+Dataset: Superstore Orders
+
+The dataset contains transactional sales data including:
+
+* Order information
+* Customer segments
+* Product categories and subcategories
+* Sales and profit values
+* Discounts
+* Shipping information
+* Regions and markets
+
+Main fields used:
+
+* Order ID
+* Order Date
+* Product Category / Subcategory
+* Customer Segment
+* Region
+* Sales
+* Profit
+* Discount
+* Shipping Cost
+
+---
+
+# Data Preparation
+
+Data preparation was performed using **Power Query**.
+
+Key transformations included:
+
+* Data type corrections (numeric / decimal values)
+* Cleaning of inconsistent numeric formats
+* Creation of calculated fields:
+
+  * `shipping_days`
+  * `shipping_time_cat`
+* Data structuring for analytical modeling
+
+The cleaned dataset was then loaded into **Power Pivot**.
+
+---
+
+# Data Model
+
+The analytical model was built using **Power Pivot**.
+
+Structure:
+
+Fact table:
+
+* `fact_sales`
+
+Supporting dimensions created from the dataset:
+
+* Products
+* Customers
+* Regions
+* Dates
+
+Measures were created using **DAX** to compute key performance indicators.
+
+Main measures include:
+
+* Total Sales
+* Total Profit
+* Margin %
+* Average Discount
+* Total Quantity
+
+---
+
+# Dashboard Features
+
+The dashboard provides interactive business analysis with **slicers and KPIs**.
+
+### Interactive Filters
+
+Users can filter the dashboard by:
+
+* Region
+* Product Category
+* Customer Segment
+* Year
+
+A **VBA button** was implemented to reset all filters instantly.
+
+---
+
+# Key Visualizations
+
+### Sales & Profit by Region
+
+Shows regional performance by comparing total sales and profit.
+
+### Category Profitability
+
+Analyzes the profitability of each product category.
+
+### Margin vs Discount
+
+Scatter plot analyzing the relationship between discounts and profit margin.
+
+### Top 10 Products
+
+Highlights the best performing products by sales.
+
+### Sales Trend
+
+Displays sales evolution over time.
+
+### Shipping Performance
+
+Provides insights into shipping delays and delivery performance.
+
+### Shipping Time Distribution
+
+Shows how long orders typically take to ship.
+
+### Worst 5 Products
+
+Identifies the least profitable products.
+
+---
+
+# Tools Used
+
+* Microsoft Excel
+* Power Query
+* Power Pivot
+* Pivot Tables
+* DAX Measures
+* VBA (for dashboard interaction)
+
+---
+
+# Project Goal
+
+This project demonstrates how Excel can be used to build a **complete business intelligence solution**, including:
+
+* Data transformation
+* Data modeling
+* KPI creation
+* Interactive dashboards
+
+The objective was to replicate the type of **analytical dashboards used in real business environments** using Excel.
+
+---
+
+# Author
+
+Data Analytics Portfolio Project
