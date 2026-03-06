@@ -1,3 +1,5 @@
+![Dashboard Preview](dashboard.png)
+
 # Superstore Sales Analytics Dashboard (Excel)
 
 ## Project Overview
