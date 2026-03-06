@@ -168,8 +168,3 @@ This project demonstrates how Excel can be used to build a **complete business i
 
 The objective was to replicate the type of **analytical dashboards used in real business environments** using Excel.
 
----
-
-# Author
-
-Data Analytics Portfolio Project
